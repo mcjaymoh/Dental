@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/imgicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imgcompanylogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/imgicon"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgcompanylogo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:gravity="start"
+            android:text="Enter YIA Server Application Details"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvinfo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edipaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IP Address"
+                android:textColor="#000"
+                android:textSize="15dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edportnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Port Number"
+                android:textColor="#000"
+                android:numeric="integer"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="15dp" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvservicetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgicon"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/imgicon"
+            android:gravity="left"
+            android:text="Server Configuration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnextserverconfiguration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="SAVE"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+</RelativeLayout>

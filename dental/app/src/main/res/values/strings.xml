@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyDentist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splashscreen">MyDentist</string>
+    <string name="title_activity_signin">Signin</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_investmentdetails">Appointment Details</string>
+    <string name="title_activity_serverconfigration">Serverconfigration</string>
+    <string name="btcreate">Create</string>
+    <string name="tv_type">ID|Passport Number</string>
+    <string name="pandya_dental_appointment_app_for_efficient_service">Pandya Dental Appointment App for Efficient Service</string>
+    <string name="txnme">Doctor Login</string>
+    <string name="imgicon"></string>
+
+</resources>

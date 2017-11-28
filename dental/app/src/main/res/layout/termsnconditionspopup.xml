@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ff8000" >
+
+        <ImageView
+            android:id="@+id/menuicon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/aboutapp2" />
+
+        <TextView
+            android:id="@+id/txtaboutApptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="smartCAFE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="www.dereksys.com"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtaboutApptitle"
+            android:padding="2dp"
+            android:text="The best and secure way to order and buy food online"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/aboutInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="smartCAFE is an android powered application with an online database and intergrates with an online transanction application that manages and supports any meal cafeteria\n\nThis project was initially a case study at\nTaita Taveta University College\n(A Constituent College of Jomo Kenyatta University of Agriculture and Technology)\nas an academic project in partial fulfillment of the requirements for the award of a degree in Bachelor of Science in Information Technology .\n\nThis Application is registered to Taita Taveta Universty College any illegal copy righting is punisherable by law.\n\nDeveloper\n Derek Mwirigi M. \n(+254) 706 828 557\nderekmwirigi@gmail.com\n\nAcknowledgement\nMr. Sam Kyang&apos;anda"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/aboutcopryright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:text="dereksystems © 2016"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

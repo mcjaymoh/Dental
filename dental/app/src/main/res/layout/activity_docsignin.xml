@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txnme"
+        android:layout_above="@+id/imgicon"
+        android:text="Doctor Login"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/docemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgicon"
+        android:layout_margin="3dp"
+        android:ems="10"
+        android:hint="Email"
+        android:text=""
+        android:textColor="#000" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/docpasscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/docemail"
+        android:layout_margin="3dp"
+        android:ems="10"
+        android:hint="Passcode"
+        android:text=""
+        android:password="true"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btdoclogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/docpasscode"
+        android:text="Sign In"
+        android:textColor="#000" />
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/lock" />
+
+
+
+</RelativeLayout>
